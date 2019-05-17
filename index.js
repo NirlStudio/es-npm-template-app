@@ -18,7 +18,6 @@ if (require.main === module) {
   var args = global.process.argv.slice(2) || []
   module.exports = $void.$run('app', args, srcHome)
 } else {
-  // running as a module (exposing sugly module to JS code)
-  var being = $void.createBootstrapSpace(path.join(srcHome, '@'))
-  module.exports = being.$import('module')
+  console.warn('This package can only work as an app.')
+  module.exports = {}
 }

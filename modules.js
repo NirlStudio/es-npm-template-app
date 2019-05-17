@@ -11,8 +11,6 @@ function copy (source, exporting) {
 
 module.exports = function (uri) {
   switch (uri) {
-    case 'os':
-      return copy.bind(null, require('os'))
     case 'path':
       return copy.bind(null, require('path'))
     default:

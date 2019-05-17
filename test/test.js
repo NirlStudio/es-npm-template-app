@@ -16,7 +16,7 @@ describe('sugly/app', function () {
   $void.createBootstrapSpace(appHome)
 
   describe('run', function () {
-    it('Running app.s returns "Hello, World"', function () {
+    it('Running app.s with argument "World" returns "Hello, World"', function () {
       var message = $void.$run('sugly/app', ['World'])
       assert.strict.equal(message, 'Hello, World')
     })
