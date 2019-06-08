@@ -1,7 +1,8 @@
 #!/usr/bin/env sugly
 
-# setup environment, for example: the value of user-name.
-var * (load "./profile");
+# setup GLOBAL environment, for example: the value of user-name.
+# Otherwise, export can be replaced to const or var.
+export * (load "./profile");
 
 # define a function.
 (const hello (=> user
