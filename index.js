@@ -7,14 +7,7 @@ var sugly = require('sugly')
 var $void = sugly()
 require('./profile')($void)
 
-// prepare the path of app home directory.
+// running as an app.
+var args = global.process.argv.slice(2) || []
 var srcHome = path.join(__dirname, 'sugly')
-
-if (require.main === module) {
-  // running as an app.
-  var args = global.process.argv.slice(2) || []
-  module.exports = $void.$run('app', args, srcHome)
-} else {
-  console.warn('This package can only work as an app.')
-  module.exports = {}
-}
+module.exports = $void.$run('app', args, srcHome)
