@@ -1,4 +1,4 @@
-#!/usr/bin/env sugly
+#!/usr/bin/env es
 
 # setup GLOBAL environment, for example: the value of user-name.
 # Otherwise, export can be replaced to const or var.
