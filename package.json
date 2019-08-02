@@ -1,6 +1,6 @@
 {
   "name": "es-npm-template-app",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "description": "A boilerplate project to wrap an Espresso app as an npm package.",
   "author": {
     "name": "Leevi Li",
