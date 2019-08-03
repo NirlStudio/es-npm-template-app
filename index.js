@@ -9,5 +9,5 @@ require('./profile')($void)
 
 // running as an app.
 var args = global.process.argv.slice(2) || []
-var appHome = path.join(__dirname, 'espresso')
+var appHome = path.join(__dirname, 'es')
 module.exports = $void.$run('app', args, appHome)
